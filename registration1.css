@@ -22,20 +22,38 @@ form{
     background-color: whitesmoke;
     border: 3px lightgray solid;
     border-radius: 10px;
-    width: 600px;
+    width: 650px;
+    box-sizing: border-box;
 }
 
 form div{
-    padding: 15px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin: 30px;
 }
 
-.textarea{
+form div > label:first-child{
+    display: inline-block;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+input.text{
     border: 1px lightgray solid;
     padding: 5px;
     color: black;
     background-color: white;
-    text-align: center;
+    text-align: left;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100px;
+    border: 1px lightgray solid;
+    padding: 5px;
+    flex-shrink: 0;
+    color: black;
 }
 
 .submit{

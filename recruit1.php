@@ -10,7 +10,7 @@
         <header></header>
         
     <h1>採用応募画面</h1>
-    <form method = "post" action = "regist_confirm.php">
+    <form method = "post" action = "recruit2.php">
              
         <div>
             <label>名前(性)</label>
@@ -167,7 +167,7 @@
                 <option value="" disabled selected></option>
                 <option value = "1">中学校卒業</option>
                 <option value = "2">高等学校卒業</option>
-                <option value = "3">専門学校卒用</option>
+                <option value = "3">専門学校卒業</option>
                 <option value = "4">短期大学卒業</option>
                 <option value = "5">四年制大学卒業</option>
                 <option value = "6">大学院修了</option>

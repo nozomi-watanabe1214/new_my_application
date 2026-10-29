@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>社員登録画面</title>
-        <link rel = "stylesheet" type = "text/css" href = "style-registration1.css">
+        <link rel = "stylesheet" type = "text/css" href = "registration1.css">
     </head>
     
     <body>

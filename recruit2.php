@@ -101,6 +101,12 @@
             }
             ?>
         </div>
+        
+        <div>
+            <label>希望勤務地：</label>
+            <?php echo $_POST['workplace']; ?>
+        </div>
+
     //生年月日を1つのデータにして格納するコード記載する
         
         <input type = "submit" class = "button1" value = "前に戻る" formaction="javascript:history.back()">
@@ -132,6 +138,8 @@
                                         echo $_POST['address_3']; ?>" name = "address_3">
         <input type = "hidden" value = "<?php 
                                         echo $_POST['educational_background']; ?>" name = "educational_background">
+        <input type = "hidden" value = "<?php 
+                                        echo $_POST['workplace']; ?>" name = "workplace">
         
     </form>
     

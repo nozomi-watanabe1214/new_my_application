@@ -173,6 +173,18 @@
                 <option value = "6">大学院修了</option>
                 <option value = "0">その他</option>
             </select>
+        </div>
+        
+        <div>
+            <label>希望勤務地</label>
+            <select name = "workplace" required>
+                <option value="" disabled selected></option>
+                <option value = "東京">東京</option>
+                <option value = "神奈川">神奈川</option>
+                <option value = "愛知">愛知</option>
+                <option value = "大阪">大阪</option>
+                <option value = "福岡">福岡</option>
+            </select>
         </div> 
         
         <div>

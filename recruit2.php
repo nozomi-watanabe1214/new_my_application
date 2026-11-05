@@ -34,6 +34,11 @@
             <label>カナ(名)：</label>
             <?php echo $_POST['last_name_kana']; ?>
         </div>
+        
+        <div>
+            <label>生年月日：</label>
+            <?php echo $_POST['birth_year']."年".$_POST['birth_month']."月".$_POST['birth_day']."日"; ?>
+        </div>
 
         <div>
             <label>メールアドレス：</label>

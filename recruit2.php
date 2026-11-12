@@ -37,7 +37,18 @@
         
         <div>
             <label>生年月日：</label>
-            <?php echo $_POST['birth_year']."年".$_POST['birth_month']."月".$_POST['birth_day']."日"; ?>
+            <?php
+            $year = $_POST['birth_year'];
+            $month = $_POST['birth_month'];
+            $day = $_POST['birth_day'];
+            
+            $birth_date = sprintf('%04d-%02d-%02d',
+                                $year,
+                                $month,
+                                $day
+                               );
+            ?>
+            <?php echo $birth_date; ?>
         </div>
 
         <div>
@@ -111,8 +122,6 @@
             <label>希望勤務地：</label>
             <?php echo $_POST['workplace']; ?>
         </div>
-
-    //生年月日を1つのデータにして格納するコード記載する
         
         <input type = "submit" class = "button1" value = "前に戻る" formaction="javascript:history.back()">
     
@@ -125,6 +134,8 @@
                                         echo $_POST['family_name_kana']; ?>" name = "family_name_kana">
         <input type = "hidden" value = "<?php 
                                         echo $_POST['last_name_kana']; ?>" name = "last_name_kana">
+        <input type = "hidden" value = "<?php 
+                                        echo $_POST['birth_date']; ?>" name = "birth_date">
         <input type = "hidden" value = "<?php 
                                         echo $_POST['mail']; ?>" name = "mail">
         <input type = "hidden" value = "<?php 

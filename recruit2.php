@@ -38,11 +38,13 @@
         <div>
             <label>生年月日：</label>
             <?php
-            $year = $_POST['birth_year'];
-            $month = $_POST['birth_month'];
-            $day = $_POST['birth_day'];
+            $year = $_POST['birth_year'] ?? '';
+            $month = $_POST['birth_month'] ?? '';
+            $day = $_POST['birth_day'] ?? '';
             
-            $birth_date = sprintf('%04d-%02d-%02d',
+            $birth_date = '';
+            
+            $birth_date = sprintf('%04d年%02d月%02d日',
                                 $year,
                                 $month,
                                 $day
@@ -134,8 +136,8 @@
                                         echo $_POST['family_name_kana']; ?>" name = "family_name_kana">
         <input type = "hidden" value = "<?php 
                                         echo $_POST['last_name_kana']; ?>" name = "last_name_kana">
-        <input type = "hidden" value = "<?php 
-                                        echo $_POST['birth_date']; ?>" name = "birth_date">
+        <input type = "hidden" value="<?php echo htmlspecialchars($birth_date, ENT_QUOTES, 'UTF-8'); ?>" 
+               name = "birth_date">
         <input type = "hidden" value = "<?php 
                                         echo $_POST['mail']; ?>" name = "mail">
         <input type = "hidden" value = "<?php 

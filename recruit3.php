@@ -13,13 +13,11 @@ $pdo = new PDO("mysql:dbname=recruitment_management;host=localhost;","root","");
     //if(isset($_POST['password'])){
     //$password_after = password_hash($_POST['password'],
                               //PASSWORD_DEFAULT);
-    
-    }
 
 $application_date = date('Y-m-d H:i:s');
 
     $pdo -> exec("insert into account(family_name,last_name,family_name_kana,last_name_kana,birth_date,mail,tel,gender,postal_code,address,educational_background,workplace,application_date)
-values('".$_POST['family_name']."','".$_POST['last_name']."','".$_POST['family_name_kana']."','".$_POST['last_name_kana']."','".$_POST['mail']."','".$_POST['tel']."','".$_POST['gender']."','".$_POST['postal_code']."','".$_POST['address']."','".$_POST['educational_background']."','".$_POST['workplace']."','".$registered_time."');");
+values('".$_POST['family_name']."','".$_POST['last_name']."','".$_POST['family_name_kana']."','".$_POST['last_name_kana']."','".$_POST['birth_date']."','".$_POST['mail']."','".$_POST['tel']."','".$_POST['gender']."','".$_POST['postal_code']."','".$_POST['address']."','".$_POST['educational_background']."','".$_POST['workplace']."','".$application_time."');");
     
     $success_message = "採用応募を受付いたしました";
 
@@ -27,7 +25,6 @@ values('".$_POST['family_name']."','".$_POST['last_name']."','".$_POST['family_n
     $error_message = "エラーが発生したため採用応募受付をできませんでした";
 }
 ?>
-//trycatchうまくいってない
 
 <?php
 ini_set('display_errors', 0);
@@ -38,7 +35,7 @@ ini_set('display_errors', 0);
     <head>
         <meta charset="UTF-8">
         <title>採用応募完了画面</title>
-        <link rel = "stylesheet" type = "text/css" href = "style4.css">
+        <link rel = "stylesheet" type = "text/css" href = "recruit3.css">
     </head>
     
     <body>

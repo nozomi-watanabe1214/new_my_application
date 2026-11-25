@@ -16,8 +16,8 @@ $pdo = new PDO("mysql:dbname=recruitment_management;host=localhost;","root","");
 
 $application_date = date('Y-m-d H:i:s');
 
-    $pdo -> exec("insert into account(family_name,last_name,family_name_kana,last_name_kana,birth_date,mail,tel,gender,postal_code,address,educational_background,workplace,application_date)
-values('".$_POST['family_name']."','".$_POST['last_name']."','".$_POST['family_name_kana']."','".$_POST['last_name_kana']."','".$_POST['birth_date']."','".$_POST['mail']."','".$_POST['tel']."','".$_POST['gender']."','".$_POST['postal_code']."','".$_POST['address']."','".$_POST['educational_background']."','".$_POST['workplace']."','".$application_time."');");
+    $pdo -> exec("insert into applicant(family_name,last_name,family_name_kana,last_name_kana,birth_date,mail,tel,gender,postal_code,address,educational_background,workplace,application_date)
+values('".$_POST['family_name']."','".$_POST['last_name']."','".$_POST['family_name_kana']."','".$_POST['last_name_kana']."','".$birth_date."','".$_POST['mail']."','".$_POST['tel']."','".$_POST['gender']."','".$_POST['postal_code']."','".$_POST['address']."','".$_POST['educational_background']."','".$_POST['workplace']."','".$application_date."');");
     
     $success_message = "採用応募を受付いたしました";
 

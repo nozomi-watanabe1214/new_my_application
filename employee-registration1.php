@@ -10,7 +10,7 @@
         <header></header>
         
     <h1>社員登録画面</h1>
-    <form method = "post" action = "employee registration2.php">
+    <form method = "post" action = "employee-registration2.php">
              
         <div>
             <label>名前(性)</label>
@@ -53,7 +53,7 @@
         </div>
         
         <div>
-            <label>部署</label>
+            <label>所属部署</label>
             <select name="department" required>
                 <option value="" disabled selected></option>
                 <option value="人事部">人事部</option>

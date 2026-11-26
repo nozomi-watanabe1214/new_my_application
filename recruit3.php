@@ -58,7 +58,7 @@ ini_set('display_errors', 0);
             
             <?php endif; ?>
         
-            <form action="index.html">
+            <form action="index.php">
             <input type = "submit" class = "submit" value = "TOPページへ戻る"></form> 
         </div>
         
